@@ -1,2 +1,0 @@
-class UserUrl < ApplicationRecord
-end

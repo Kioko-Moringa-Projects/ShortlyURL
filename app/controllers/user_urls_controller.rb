@@ -1,2 +1,0 @@
-class UserUrlsController < ApplicationController
-end
