@@ -1,0 +1,8 @@
+body{
+overflow: scroll;
+
+}
+.figure1{
+    display: flex;
+    justify-content: center;
+}

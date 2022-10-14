@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+main {
+  overflow-y: auto;
+  
+}
+aside {
+  flex: 1 0 10%;
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+}
