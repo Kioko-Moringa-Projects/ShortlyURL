@@ -32,7 +32,7 @@ function App() {
                <div>         
             <NavigationUser />
             <Routes>
-            <Route  path="/" element={<Landing />} />
+            <Route  path="/landing" element={<Landing />} />
             <Route  path="/formshort" element={<FormShort />} />
             <Route  path="/viewAll" element={<UrlShortenList />} />
             <Route  path="/editurl" element={<EditUrl/>} />
