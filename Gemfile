@@ -14,9 +14,8 @@ gem 'puma', '~> 5.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-gem 'bcrypt'
+gem 'bcrypt', '~> 3.1.7'
 
-gem "faker"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -33,7 +32,6 @@ end
 
 group :development do
   gem 'listen', '~> 3.3'
-  gem "sqlite3"
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
@@ -51,8 +49,3 @@ group :test do
 end
 
 gem "active_model_serializers", "~> 0.10.12"
-
-group :production do
-     gem 'pg', '~> 1.4', '>= 1.4.3'
-    gem 'rails_12factor'
-end

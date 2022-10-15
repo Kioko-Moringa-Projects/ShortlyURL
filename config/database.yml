@@ -1,7 +1,7 @@
 # PostgreSQL. Versions 9.3 and up are supported.
 #
 # Install the pg driver:
-#   g
+#   gem install pg
 # On macOS with Homebrew:
 #   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
 # On macOS with MacPorts:
@@ -15,13 +15,15 @@
 # gem 'pg'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: react_rails_api_project_template_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -77,8 +79,8 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
-adapter: postgresql
-  encoding: unicode
-  database: production
-  host: <%= ENV['DATABASE_HOST'] %>
-  pool: 5
+production:
+  <<: *default
+  database: react_rails_api_project_template_production
+  username: react_rails_api_project_template
+  password: <%= ENV['REACT_RAILS_API_PROJECT_TEMPLATE_DATABASE_PASSWORD'] %>

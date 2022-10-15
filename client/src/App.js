@@ -34,12 +34,12 @@ function App() {
             <Routes>
             <Route  path="/" element={<Landing />} />
             <Route  path="/formshort" element={<FormShort />} />
-            <Route  path="/customers" element={<UrlShortenList />} />
+            <Route  path="/viewAll" element={<UrlShortenList />} />
             <Route  path="/editurl" element={<EditUrl/>} />
             <Route  path="/signup" element={<Signup />} />
             <Route  path="/login" element={<Login/>} />
-            <Route  path="/customers/:id/edit" element={<ManageUser/>} />
-            <Route  path="/customers/:id" element={<ProfileView/>} />
+            <Route  path="/edituser" element={<ManageUser/>} />
+            <Route  path="/viewUser" element={<ProfileView/>} />
              </Routes>
           <Footer />      
           </div>          
