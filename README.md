@@ -4,7 +4,7 @@
 <hr><p>Calvin Kioko.</p>
 <h2>Deployment</h2>
 <hr><ul><li>Front-end - https://shortlyurl-eight.vercel.app</li></ul></p>
-<hr><ul><li>Back-end - https://shortlyurl-eight.vercel.app/.</li></ul></p>
+<hr><ul><li>Back-end - https://sshortly99.herokuapp.com.</li></ul></p>
 <h2>General Information</h2>
 <hr><ul>
 <li>This product focuses on shortening long URLs to be used by people and organizations.</li>
