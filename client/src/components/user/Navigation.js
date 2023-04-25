@@ -43,12 +43,12 @@ export default function Navigation() {
                             <li className="text-gray-600 hover:text-red-600">
                                 <NavLink to ='/edituser'>Edit User</NavLink>
                             </li>
-                            <li className="text-gray-600 hover:text-red-600">
+                            {/* <li className="text-gray-600 hover:text-red-600">
                                 <NavLink to ='/signup'>Signup</NavLink>
                             </li>
                             <li className="text-gray-600 hover:text-red-600">
                                 <NavLink to ='/login'>Login</NavLink>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 
