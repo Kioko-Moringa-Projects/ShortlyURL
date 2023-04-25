@@ -9,16 +9,18 @@ export default function Navigation() {
     return (
         <nav className="object5 w-full shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
-                <div>
+                
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                     <NavLink exact='true' to ="/landing">
                             <h2 className="text-2xl font-bold">ShortlyURL🔗</h2></NavLink>
                         
+                      </div>  
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 
                             >
+                                </button>
                                 
                     
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
@@ -49,7 +51,7 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                </div>
+                
             </div>
         </nav>
     );

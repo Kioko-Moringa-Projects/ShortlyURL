@@ -36,8 +36,8 @@ function App() {
             <Route  path="/formshort" element={<FormShort />} />
             <Route  path="/viewAll" element={<UrlShortenList />} />
             <Route  path="/editurl" element={<EditUrl/>} />
-            <Route  path="/signup" element={<Signup />} />
-            <Route  path="/login" element={<Login/>} />
+            {/* <Route  path="/signup" element={<Signup />} /> */}
+            {/* <Route  path="/login" element={<Login/>} /> */}
             <Route  path="/edituser" element={<ManageUser/>} />
             <Route  path="/viewUser" element={<ProfileView/>} />
              </Routes>
@@ -45,18 +45,6 @@ function App() {
           </div>          
       </BrowserRouter> 
 
-
-     {/* <BrowserRouter>
-      <div>
-      <Navigation />
-        <Routes>
-        <Route exact path="/" element={<Home />} />
-        
-        </Routes>
-      
-      </div>
-      </BrowserRouter>  */}
-                    
 
        
 
